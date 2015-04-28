@@ -1,2 +1,43 @@
-git is the most popular repository in the current day. therefore, understand 
-and know how to use it is important.
+I had little experience on GIT before. The more deep knowledge becomes more and more critial currently. the following is track how i learn git.
+
+preliminary:
+. create a account on githut
+. create new repository
+. install git client on my local
+. learn basic git repository knowledge
+
+basic git knowledge
+. workflow
+	your local repository consists of 3 trees maintained by git. the first one is 'working directory' which holds the actual files.
+	the second one is the 'Index or called Stage' which acts as a staging area and finally the 'Head' which points to the last commit you've made.
+
+. branch
+	Branches are used to develop features isolated from each other. the master branch is the 'Default' branch when you create a repository. use other
+	branches for development and merge them back to the master branch upon completion.
+	
+	
+start from beginning
+how should you start to create your own repository depends on the what you have right now. below are the various use cases
+. you just join the existed project. clone from the existing remote repository
+		.git clone https://....
+		.modify some files
+		.git add filename
+		.git commit filename -m "modification"
+		.git push -u origin master
+		
+. start a new project. you are the first person check in staff or you are the administrator of the repository
+	.make sure the remote repository has been created
+	.create your own local repository
+		.create a new project folder
+		.cd to the folder
+		.git init
+		.git add filename
+		.git commit filename -m "first check in"
+		.git remote add origin remoteURL
+		.git push -u origin master
+		
+		
+	
+
+	
+	
