@@ -18,7 +18,7 @@ basic git knowledge
 	
 start from beginning
 how should you start to create your own repository depends on the what you have right now. below are the various use cases
-. you just join the existed project. clone from the existing remote repository
+. join an existed project. clone from the existing remote repository
 		.git clone https://....
 		.modify some files
 		.git add filename
