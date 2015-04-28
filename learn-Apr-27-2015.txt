@@ -38,8 +38,15 @@ how should you start to create your own repository depends on the what you have 
 	
 	
 . branch management
-	.create a new branch and switch to it
-		git checkout -b devBranch == git branch devBranch + git checkout devBranch
+	.create a new branch and switch to it and git HEAD points to the new branch
+		git checkout -b devBranch == git branch devBranch + git checkout devBranch 
+	.to do some modification
+		git add files
+		git commit -a -m "check the fix"
+		git push origin devBranch
+	.merge the change back to master
+		git checkout master  #HEAD is point to master branch
+		git merge devBranch
 		
 		
 	
