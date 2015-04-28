@@ -35,9 +35,12 @@ how should you start to create your own repository depends on the what you have 
 		.git commit filename -m "first check in"
 		.git remote add origin remoteURL
 		.git push -u origin master
-		
-		
 	
-
+	
+. branch management
+	.create a new branch and switch to it
+		git checkout -b devBranch == git branch devBranch + git checkout devBranch
+		
+		
 	
 	
