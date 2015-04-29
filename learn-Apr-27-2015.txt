@@ -40,6 +40,8 @@ how should you start to create your own repository depends on the what you have 
 . branch management
 	.create a new branch and switch to it and git HEAD points to the new branch
 		git checkout -b devBranch == git branch devBranch + git checkout devBranch 
+	.check current branch HEAD points to
+		git branch || git branch -v
 	.to do some modification
 		git add files
 		git commit -a -m "check the fix"
@@ -47,6 +49,15 @@ how should you start to create your own repository depends on the what you have 
 	.merge the change back to master
 		git checkout master  #HEAD is point to master branch
 		git merge devBranch
+	.after branch merged to master, branch can be deleted
+		git branch -d devBranch #just delete the branch in your local repository
+		git push origin --delete devBranch  #delete branch from your remote repository
+		 
+		 
+		 
+	branch reference:
+	http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely
+		
 		
 		
 	
