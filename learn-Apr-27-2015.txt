@@ -54,8 +54,21 @@ how should you start to create your own repository depends on the what you have 
 		git push origin --delete devBranch  #delete branch from your remote repository
 		 
 		 
-		 
+	Git merge strategy is different from other version control. it does a simple 3-way merge, using the two snapshots pointed to by the branch tips and the common ancestor of the two.
+	Besides git merge, we can merge two branches by rebasing. The approach just applies all the commits in one branch to another branch you like to rebase on. eg.
+		.git checkout devBranch
+		.git rebase master #modify devBranch by applying the commits to master branch
+		
+		First, set head devBranch. then apply the commits on devBranch to master. therefore, devBranch has the same base now. we can easily merge both branches.
+		
+		.git checkout master
+		.git merge devBranch
+		
+		the benefit of rebase over merge is that rebasing makes a cleaner history.
+		
+	
 	branch reference:
+	https://www.atlassian.com/git/tutorials/syncing/git-remote
 	http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely
 		
 		
